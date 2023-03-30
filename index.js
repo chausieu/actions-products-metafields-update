@@ -12,7 +12,7 @@ async function sendRequest (){
     const parsedFiles = JSON.parse(changedFiles.replace(/\\/g, ''));
     console.log('Changed Files: ', parsedFiles);
 
-    const request  = await fetch('', {
+    const request  = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
