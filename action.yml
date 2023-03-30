@@ -1,0 +1,14 @@
+name: 'Send Files Changed to Webapp'
+inputs:
+  url:
+    description: URL of metafields update
+    required: true
+  changed-files:
+    description: List of Changed Files in JSON using tj-actions/changed-files
+    required: true
+  token:
+    description: JWT
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
